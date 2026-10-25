@@ -1,0 +1,19 @@
+/* C program to evaluate the following expressions. a. A+B*C+(D*E) + F*G
+b. A/B*C-B+A*D/3
+c. A+++B---A
+d. J= (i++) + (++i)*/
+#include<stdio.h>
+void main()
+{
+   int A,B,C,D,E,F,G,J,i,a,b,c,d;
+    printf("\nEnter A,B,C,D,E,F,G:");
+    scanf("%d%d%d%d%d%d%d",&A,&B,&C,&D,&E,&F,&G);
+    a=A+B*C+(D*E)+F*G;
+    printf("\nA+B*C+(D*E)+F*G=%d",a);
+    b=A/B*C-B+A*D/3;
+    printf("\nA/B*C-B+A*D/3=%d",b);
+    c= A+++B---A;
+    printf("\nA+++B---A=%d",c);
+    d=J=(i++)+(++i);
+    printf("\n(i++)+(++i)=%d",d);
+}    
