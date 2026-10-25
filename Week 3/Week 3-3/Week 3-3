@@ -1,0 +1,12 @@
+//C program to area of a triangle using heron’s formulae
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+    float a,b,c,s,area;
+    printf("enter three sides");
+    scanf("%f%f%f",&a,&b,&c);
+    s=(a+b+c)/2;
+    area=sqrt(s*(s-a)*(s-b)*(s-c));
+    printf("Area of triangle=%.2f",area);
+}    
