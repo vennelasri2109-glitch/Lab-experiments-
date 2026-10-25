@@ -1,0 +1,11 @@
+//C program to finding the square root of a given number
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+    float n, result;
+    printf("enter a number");
+    scanf("%f", &n);
+    result=sqrt(n);
+    printf("sqaure root is %0.2f", result);
+}    
