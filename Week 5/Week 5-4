@@ -1,0 +1,39 @@
+ //menu-driven C program using the switch statement to simulate this calculator
+#include <stdio.h>
+int main()
+{
+    int a, b;
+    char operator;
+    printf("enter the operator(+,-,*,/)");
+    scanf("%c",&operator);
+    printf("\nEnter two numbers: ");
+    scanf("%d%d", &a, &b);
+    switch (operator)
+    {
+        case '+':
+            printf("Result = %d", a + b);
+            break;
+
+        case '-':
+            printf("Result =%d", a - b);
+            break;
+
+        case '*':
+            printf("Result =%d", a * b);
+            break;
+
+        case '/':
+            if (b == 0)
+            {
+                printf("Division by zero is not possible");
+            }
+            else
+            {
+                printf("Result =%.2f", (float)a / b);
+            }
+            break;
+
+        default:
+            printf("Invalid option");
+    }
+}
