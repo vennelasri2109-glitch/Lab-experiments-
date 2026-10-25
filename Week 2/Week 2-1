@@ -1,0 +1,14 @@
+//c program for the sum and average of three given numbers
+#include<stdio.h>
+void main()
+{
+int a,b,c,sum;
+float Avg;
+printf("enter the a,b,c values");
+scanf("%d%d%d",&a,&b,&c);
+sum=a+b+c;
+printf("\nsum of three numbers is %d",sum);
+Avg=sum/3.0;
+printf("\naverage of three numbers is %0.2f",Avg);
+}
+
